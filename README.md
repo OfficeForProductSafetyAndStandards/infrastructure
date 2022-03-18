@@ -115,3 +115,8 @@ If you want to receive emails, ask someone on the team to add you to the list of
 We're using [Sentry](https://sentry.io) to monitor exceptions.
 If you want to view the exceptions, you'll need an account - ask someone on the team to invite you.
 You should sign up using GitHub OAuth to ensure MFA.
+
+
+## Terraform
+
+We're using [Terraform](https://www.terraform.io/) for some AWS infrastructure, which has its own [README.md file inside the terraform directory](/terraform/README.md).
