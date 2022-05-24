@@ -22,8 +22,18 @@ terraform init
 
 ```sh
 # To see what changes will be made
-terraform plan
+terraform plan -var 'aws_profile=beis-opss-infrastructure'
 
 # To make those changes
-terraform apply
+terraform apply -var 'aws_profile=beis-opss-infrastructure'
+```
+
+## Switching to another AWS aws_profile/testing out changes
+
+If you'd like to target another AWS account, for example production or a test environment, use a different terraform workspace and different AWS profiles:
+
+```sh
+terraform workspace select test
+terraform plan -var 'aws_profile=beis-opss-infrastructure-test'
+terraform apply -var 'aws_profile=beis-opss-infrastructure-test'
 ```
