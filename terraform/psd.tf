@@ -20,7 +20,6 @@ module "psd_prod" {
   extract_batch_operations_role_name          = local.psd_config.prod.extract_batch_operations_role_name
   extract_batch_operation_trigger_policy_name = local.psd_config.prod.extract_batch_operation_trigger_policy_name
   extract_batch_operations_policy_name        = local.psd_config.prod.extract_batch_operations_policy_name
-  report_checker_slack_webhook_url            = local.psd_config.prod.report_checker_slack_webhook_url
 }
 
 module "psd_staging" {
@@ -33,5 +32,4 @@ module "psd_staging" {
   extract_batch_operations_role_name          = local.psd_config.staging.extract_batch_operations_role_name
   extract_batch_operation_trigger_policy_name = local.psd_config.staging.extract_batch_operation_trigger_policy_name
   extract_batch_operations_policy_name        = local.psd_config.staging.extract_batch_operations_policy_name
-  report_checker_slack_webhook_url            = local.psd_config.staging.report_checker_slack_webhook_url
 }

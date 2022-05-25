@@ -53,10 +53,3 @@ variable "extract_batch_operations_policy_name" {
   nullable    = false
   sensitive   = false
 }
-
-variable "report_checker_slack_webhook_url" {
-  type        = string
-  description = "The Slack URL to notify in the event of a failure appearing in the data extract reports"
-  nullable    = false
-  sensitive   = false
-}
