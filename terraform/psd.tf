@@ -20,6 +20,7 @@ module "psd_prod" {
   extract_batch_operations_role_name          = local.psd_config.prod.extract_batch_operations_role_name
   extract_batch_operation_trigger_policy_name = local.psd_config.prod.extract_batch_operation_trigger_policy_name
   extract_batch_operations_policy_name        = local.psd_config.prod.extract_batch_operations_policy_name
+  manage_user_upload_bucket_policy_name       = local.psd_config.prod.manage_user_upload_bucket_policy_name
 }
 
 module "psd_staging" {
@@ -32,4 +33,5 @@ module "psd_staging" {
   extract_batch_operations_role_name          = local.psd_config.staging.extract_batch_operations_role_name
   extract_batch_operation_trigger_policy_name = local.psd_config.staging.extract_batch_operation_trigger_policy_name
   extract_batch_operations_policy_name        = local.psd_config.staging.extract_batch_operations_policy_name
+  manage_user_upload_bucket_policy_name       = local.psd_config.staging.manage_user_upload_bucket_policy_name
 }

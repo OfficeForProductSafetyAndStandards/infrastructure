@@ -53,3 +53,11 @@ variable "extract_batch_operations_policy_name" {
   nullable    = false
   sensitive   = false
 }
+
+variable "manage_user_upload_bucket_policy_name" {
+  type        = string
+  description = "The name of the policy which permits management of the user upload bucket"
+  default     = "psd-user-upload-bucket-policy"
+  nullable    = false
+  sensitive   = false
+}
