@@ -2,5 +2,5 @@ source "https://rubygems.org"
 
 ruby File.read(".ruby-version").strip
 
-gem "fluentd", "~> 1.14"
+gem "fluentd", "~> 1.15"
 gem "fluent-plugin-s3", "~> 1.1"
