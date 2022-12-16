@@ -35,3 +35,16 @@ module "psd_staging" {
   extract_batch_operations_policy_name        = local.psd_config.staging.extract_batch_operations_policy_name
   manage_user_upload_bucket_policy_name       = local.psd_config.staging.manage_user_upload_bucket_policy_name
 }
+
+module "psd_research" {
+  source = "./modules/psd"
+
+  iam_user_name                               = local.psd_config.research.iam_user_name
+  user_uploads_bucket_name                    = local.psd_config.research.user_uploads_bucket_name
+  extract_files_bucket_name                   = local.psd_config.research.extract_files_bucket_name
+  extract_database_dumps_bucket_name          = local.psd_config.research.extract_database_dumps_bucket_name
+  extract_batch_operations_role_name          = local.psd_config.research.extract_batch_operations_role_name
+  extract_batch_operation_trigger_policy_name = local.psd_config.research.extract_batch_operation_trigger_policy_name
+  extract_batch_operations_policy_name        = local.psd_config.research.extract_batch_operations_policy_name
+  manage_user_upload_bucket_policy_name       = local.psd_config.research.manage_user_upload_bucket_policy_name
+}
